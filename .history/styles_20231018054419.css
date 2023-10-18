@@ -223,7 +223,7 @@ input#check {
   header.main-header {
     margin-bottom: 4rem;
   }
-  .header-wrap   {
+  .header-wrap  a img  {
     position: fixed;
     width: 100%;
     background-color: #fff;
@@ -235,7 +235,7 @@ input#check {
   .wrap-logo-header  a img  {
     position: fixed;
     z-index: 999;
-   
+    top: 3%;
     left: 3%;
   }
   .logo-header,

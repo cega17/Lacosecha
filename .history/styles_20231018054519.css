@@ -235,7 +235,7 @@ input#check {
   .wrap-logo-header  a img  {
     position: fixed;
     z-index: 999;
-   
+    top: 1%;
     left: 3%;
   }
   .logo-header,
