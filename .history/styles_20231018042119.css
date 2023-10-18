@@ -97,7 +97,7 @@ h6 {
 header.main-header {
   
  
-  position: flex;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 9999;
@@ -113,13 +113,10 @@ header.main-header {
  
 }
 
-.logo {
+.wrap-logo-header {
   display: flex;
   align-items: center;
   flex-basis: 15%;
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
 }
 
 .logo-header {
@@ -129,10 +126,9 @@ header.main-header {
 }
 
 .nav-header {
-  display: flex;
+  display: fixed;
   align-items: center;
   width: 100%;
-  height: 60px;
 }
 
 .nav-wrap-header {
@@ -142,7 +138,7 @@ header.main-header {
 .main-section{
  
   background: linear-gradient(to bottom, rgb(0 0 0 / 0.55), rgb(0 0 0 / 0.5)),
-    url(imgs/img1.jpg);
+    url(imgs/logo-la-cosecha.jpg);
     background-repeat:no-repeat;
     background-size:cover;
   background-position: top;
@@ -324,10 +320,9 @@ input#check {
   display: none;
 }
 
-.img2 {
-  width: 100%;
-  height: 500px;
-  
+img {
+  width: 50%;
+  height: auto;
 }
 
 /* Estilos para los puntos de control */
@@ -456,8 +451,6 @@ input#check {
   background-color: rgb(165, 221, 165);
   padding: 80px 0;
   text-align: center;
-  color:var(--black-c);
-
 }
 
 .contact-container {
@@ -481,7 +474,6 @@ input#check {
 
 .contact-info p {
   font-size: 18px;
-  color: gray;
 }
 
 .contact-details {

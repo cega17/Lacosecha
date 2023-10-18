@@ -19,9 +19,9 @@
     <header class="main-header">
         <div class="header-wrap">
           <div class="wrap-logo-header">
-            <a href="#MiFooter">
-            <img src="imgs/logo-la-cosecha.jpg" alt="" class="logo" />
-          </a>
+            <a href="/" class="logo-header" >
+             <span>La</span><span>Cosecha</span>
+            </a>
           </div>
           <div class="wrap-nav-header">
             <nav class="nav-header">
@@ -86,55 +86,35 @@
 
           <div class="gallery">
             <div class="gallery-item">
-              <img src="imgs/producto1.jpg" alt="Producto 1">
+              <img src="imgs/204805077_116294687404241_1215964271672129035_n.jpg" alt="Producto 1">
               <div class="caption">Producto 1</div>
             </div>
             <div class="gallery-item">
-              <img src="imgs/producto2.jpg" alt="Producto 2">
-              <div class="caption">Producto 2</div>
-            </div>
-            <div class="gallery-item">
-              <img src="imgs/producto4.jpg" alt="Producto 2">
-              <div class="caption">Producto 2</div>
-            </div>
-            <div class="gallery-item">
-              <img src="imgs/producto5.jpg" alt="Producto 2">
-              <div class="caption">Producto 2</div>
-            </div>
-            <div class="gallery-item">
-              <img src="imgs/producto6.jpg" alt="Producto 2">
-              <div class="caption">Producto 2</div>
-            </div>
-            <div class="gallery-item">
-              <img src="imgs/producto7.jpg" alt="Producto 2">
-              <div class="caption">Producto 2</div>
-            </div>
-            <div class="gallery-item">
-              <img src="imgs/img1.jpg" alt="Producto 2">
-              <div class="caption">Producto 2</div>
-            </div>
-            <div class="gallery-item">
-              <img src="imgs/producto8.jpg" alt="Producto 2">
-              <div class="caption">Producto 2</div>
-            </div>
-            <div class="gallery-item">
-              <img src="imgs/producto9.jpg" alt="Producto 2">
-              <div class="caption">Producto 2</div>
-            </div>
-            <div class="gallery-item">
-              <img src="imgs/producto10.jpg" alt="Producto 2">
-              <div class="caption">Producto 2</div>
-            </div>
-            <div class="gallery-item">
-              <img src="imgs/producto11.jpg" alt="Producto 2">
-              <div class="caption">Producto 2</div>
-            </div>
-            <div class="gallery-item">
-              <img src="imgs/producto12.jpg" alt="Producto 2">
-              <div class="caption">Producto 2</div>
-            </div>
-            <div class="gallery-item">
-              <img src="imgs/producto13.jpg" alt="Producto 2">
+              <img src="imgs/217647868_108919741475069_2289363541738371457_n.jpg// Obtén todos los elementos de la galería
+              const galleryItems = document.querySelectorAll('.gallery-item');
+              const galleryImages = document.querySelectorAll('.gallery-item img');
+              
+              // Agrega un manejador de eventos a cada elemento de la galería
+              galleryItems.forEach((item, index) => {
+                item.addEventListener('click', () => {
+                  // Crea un elemento modal para mostrar la imagen en tamaño completo
+                  const modal = document.createElement('div');
+                  modal.classList.add('modal');
+                  const modalImage = document.createElement('img');
+                  modalImage.src = galleryImages[index].src;
+                  modalImage.alt = galleryImages[index].alt;
+                  modal.appendChild(modalImage);
+                  
+                  // Agrega el modal al cuerpo del documento
+                  document.body.appendChild(modal);
+                  
+                  // Cierra el modal cuando se hace clic en él
+                  modal.addEventListener('click', () => {
+                    modal.remove();
+                  });
+                });
+              });
+              " alt="Producto 2">
               <div class="caption">Producto 2</div>
             </div>
             <!-- Agrega más elementos de la galería aquí -->
@@ -142,33 +122,6 @@
           
           
         </div>
-        <div class="slideshow-container">
-          <div class="mySlides fade">
-            <img src="imgs/producto12.jpg" alt="Descripción de la imagen 1" class="img2">
-          </div>
-        
-          <div class="mySlides fade">
-            <img src="imgs/producto13.jpg" alt="Descripción de la imagen 2" class="img2">
-          </div>
-        
-          <div class="mySlides fade">
-            <img src="imgs/producto14.jpg" alt="Descripción de la imagen 3" class="img2">
-          </div>
-          <div class="mySlides fade">
-            <img src="imgs/img1.jpg" alt="Descripción de la imagen 3" class="img2">
-          </div>
-        
-          <!-- Agrega más diapositivas aquí -->
-        </div>
-        
-        <div style="text-align:center">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <!-- Agrega más puntos aquí para controlar las diapositivas -->
-        </div>
-        
       </section>
 
     
@@ -184,7 +137,7 @@
           <h2>Algunos de nuestros productos</h2>
         </div>
         <div class="column-4 columns">
-          <div style="background:url(imgs/producto2.jpg)center;background-size: cover;" class="tarjeta-rest">
+          <div style="background:url(imgs/descarga.jpeg)center;background-size: cover;" class="tarjeta-rest">
             <div class="wrap-text_tarjeta-rest">
               <h3>Producto #1</h3>
               <p>Descripcion de el producto</p>
@@ -198,7 +151,7 @@
               </div>
             </div>  
           </div>
-          <div style="background:url(imgs/producto1.jpg)center;background-size: cover;" class="tarjeta-rest">
+          <div style="background:url(imgs/images\ \(1\).jpeg)center;background-size: cover;" class="tarjeta-rest">
             <div class="wrap-text_tarjeta-rest">
               <h3>Producto #2</h3>
               <p>Descripcion de el producto </p>
@@ -212,7 +165,7 @@
               </div>
             </div>  
           </div>
-          <div style="background:url(imgs/producto10.jpg)center;background-size: cover;" class="tarjeta-rest">
+          <div style="background:url(imgs/images\ \(2\).jpeg)center;background-size: cover;" class="tarjeta-rest">
             <div class="wrap-text_tarjeta-rest">
               <h3>Producto #3</h3>
               <p>Descripcion de el Producto</p>
@@ -226,7 +179,7 @@
               </div>
             </div>  
           </div>
-          <div style="background:url(imgs/producto9.jpg)center;background-size: cover;" class="tarjeta-rest">
+          <div style="background:url(imgs/fondo-frutas-verduras_23-2148497076.avif)center;background-size: cover;" class="tarjeta-rest">
             <div class="wrap-text_tarjeta-rest">
               <h3>Producto # 4</h3>
               <p>Descripcion de el producto</p>
@@ -318,7 +271,7 @@
           <ul>
             <li>
               <a
-                href="https://www.facebook.com/profile.php?id=100070625239399&sk=photos"
+                href="https://facebook.com"
                 target="_blank"
                 rel="nofollow noopener noreferer"
                 ><img
@@ -350,11 +303,10 @@
         </div>
       </div>
     </footer>
-    
-    <script src="script.js">
-     
 
+    <script src="script.js">
 
     </script>
+    
   </body>
 </html>
